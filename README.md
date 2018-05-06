@@ -1,2 +1,4 @@
 # michebble.github.io
-Portfolio site
+This is my portfolio site. Still a work in progress.
+
+[michebble.github.io](https://michebble.github.io/)
