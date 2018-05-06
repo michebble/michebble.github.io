@@ -13,6 +13,10 @@ main {
   line-height: 1.5rem;
 }
 
+em {
+  color: #ff4dbe;
+}
+
 /* unvisited link */
 a:link {
   color: #3ee3ff;
