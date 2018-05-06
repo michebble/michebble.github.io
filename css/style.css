@@ -4,7 +4,7 @@
 
 body {
   background: #1e1f2a;
-  font-family: monospace;
+  font-family: 'IBM Plex Mono', monospace;
   color: white;
 }
 
@@ -27,3 +27,45 @@ a:visited {
   color: #b175ff;
 }
 
+.content {
+ padding-top: 1rem;
+}
+
+.left-side {
+  padding-bottom: 1rem;
+}
+
+.right-side {
+  text-align: right;
+}
+
+.green {
+  color: #00ff57;
+}
+
+@media(min-width: 40em) {
+  h1 {
+    font-size: 3rem;
+    line-height: 2rem;
+  }
+
+  p{
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+  }
+
+
+  .right-side div, .left-side div {
+    font-size: 1rem;
+
+  }
+
+
+
+}
