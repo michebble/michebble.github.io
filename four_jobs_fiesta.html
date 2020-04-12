@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hebble Michael - Four Jobs Fiesta Selecta</title>
+  <style>
+    body{
+      margin:1em auto;
+      max-width:40em;
+      padding:0 .62em;
+      font:1.2em/1.62 sans-serif;
+    }
+    h1,h2,h3 {
+      line-height:1.2;
+    }
+    @media print{
+      body{
+        max-width:none
+      }
+    }
+  </style>
+  </head>
+  <body>
+    <h1>Four Jobs Fiesta Selecta</h1>
+    <div>
+      <h4>Wind crystal</h4>
+      <button onClick="selectJob(windJobs, 'wind-crystal')">select job</button>
+      <input id="wind-crystal" />
+    </div>
+    <div>
+      <h4>Water crystal</h4>
+      <button onClick="selectJob(waterJobs, 'water-crystal')">select job</button>
+      <input id="water-crystal" />
+    </div>
+    <div>
+      <h4>Fire crystal</h4>
+      <button onClick="selectJob(fireJobs, 'fire-crystal')">select job</button>
+      <input id="fire-crystal" />
+    </div>
+    <div>
+      <h4>Earth crystal</h4>
+      <button onClick="selectJob(earthJobs, 'earth-crystal')">select job</button>
+      <input id="earth-crystal" />
+    </div>
+    <a href="index.html">Back to main page</a>
+    <script>
+      var windJobs = ["Black Mage", "Blue Mage","Knight", "Monk", "Thief", "White Mage"];
+      var waterJobs = ["Time Mage", "Red Mage", "Summoner", "Berseker", "Mystic Knight"];
+      var fireJobs = ["Bard", "Beastmaster", "Geomancer", "Ninja", "Ranger"];
+      var earthJobs = ["Dancer", "Dragoon", "Samurai", "Chemist"];
+
+      function selectJob(jobList, id) {
+        var jobDisplay = document.getElementById(id);
+        jobDisplay.value = jobList[Math.floor(Math.random() * jobList.length)];
+      }
+    </script>
+  </body>
+</html>
